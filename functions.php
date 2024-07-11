@@ -274,3 +274,9 @@ if (!function_exists('unregister_embed_blocks')) :
 endif;
 
 add_action('enqueue_block_editor_assets', 'unregister_embed_blocks');
+
+/**
+ * Remove Admin Bar
+ */
+
+add_filter('show_admin_bar', '__return_false');
