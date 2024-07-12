@@ -458,9 +458,6 @@
 				}
 			},
 			"core/group": {
-				"color": {
-					"background": "var(--wp--preset--color--transparent)"
-				},
 				"spacing": {
 					"padding": {
 						"bottom": "20px",
@@ -747,7 +744,6 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--transparent)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"css": ":where(.wp-site-blocks *:focus){outline-width:0px;outline-style:solid}",
