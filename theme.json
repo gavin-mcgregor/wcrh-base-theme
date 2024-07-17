@@ -98,6 +98,7 @@
 			]
 		},
 		"layout": {
+			"allowCustomContentAndWideSize": false,
 			"contentSize": "620px",
 			"wideSize": "1280px"
 		},
