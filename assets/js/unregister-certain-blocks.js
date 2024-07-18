@@ -1,5 +1,6 @@
 wp.domReady(() => {
 	wp.domReady(function () {
+		// Remove embed blocks
 		const allowedEmbedBlocks = ["embed", "youtube", "vimeo"];
 		wp.blocks
 			.getBlockVariations("core/embed")
@@ -8,5 +9,7 @@ wp.domReady(() => {
 					wp.blocks.unregisterBlockVariation("core/embed", blockVariation.name);
 				}
 			});
+		// Remove spacer block
+		wp.blocks.unregisterBlockType("core/spacer");
 	});
 });

@@ -1,0 +1,3 @@
+.wp-block-columns.is-layout-flex {
+	column-gap: var(--wp--preset--spacing--30);
+}

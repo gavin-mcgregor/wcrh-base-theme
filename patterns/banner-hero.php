@@ -1,55 +1,56 @@
 <?php
+
 /**
  * Title: Hero
  * Slug: wcrh-base-theme/banner-hero
- * Categories: banner, call-to-action, featured
- * Viewport width: 1400
+ * Categories: home, featured,
  */
 ?>
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained","contentSize":"","wideSize":""}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+<!-- wp:group {"tagName":"section","metadata":{"name":"Section"},"className":"is-style-default","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"base","layout":{"type":"default"},"width":"page-width-full"} -->
+<section class="wp-block-group is-style-default has-base-background-color has-background" style="margin-top:0;margin-bottom:0"><!-- wp:group {"metadata":{"name":"Inner"},"layout":{"type":"default"},"width":"page-width-normal"} -->
+	<div class="wp-block-group"><!-- wp:wcrh/custom-spacer /-->
 
-	<!-- wp:group {"style":{"spacing":{"blockGap":"0px"}},"layout":{"type":"constrained","contentSize":"565px"}} -->
-	<div class="wp-block-group">
+		<!-- wp:columns -->
+		<div class="wp-block-columns"><!-- wp:column {"className":"is-style-flex-center","style":{"spacing":{"blockGap":"var:preset|spacing|10"}}} -->
+			<div class="wp-block-column is-style-flex-center"><!-- wp:group {"metadata":{"name":"Inner"},"layout":{"type":"default"}} -->
+				<div class="wp-block-group"><!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
+					<h1 class="wp-block-heading has-xx-large-font-size">Best way to test design ideas is wireframing.</h1>
+					<!-- /wp:heading -->
 
-		<!-- wp:heading {"textAlign":"center","fontSize":"x-large","level":1} -->
-		<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php echo esc_html_x( 'A commitment to innovation and sustainability', 'Heading of the hero section', 'wcrh-base-theme' ); ?></h1>
-		<!-- /wp:heading -->
+					<!-- wp:paragraph -->
+					<p> Nulla id feugiat velit, eget consectetur quam. Pellentesque cursus pulvinar augue, at viverra libero congue eget. Vivamus quis tellus quam. Sed elementum tristique diam, in euismod ligula laoreet in.</p>
+					<!-- /wp:paragraph -->
 
-		<!-- wp:spacer {"height":"1.25rem"} -->
-		<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
+					<!-- wp:buttons -->
+					<div class="wp-block-buttons"><!-- wp:button -->
+						<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Get Started for Free</a></div>
+						<!-- /wp:button -->
 
-		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center"><?php echo esc_html_x( 'Études is a pioneering firm that seamlessly merges creativity and functionality to redefine architectural excellence.', 'Content of the hero section', 'wcrh-base-theme' ); ?></p>
-		<!-- /wp:paragraph -->
+						<!-- wp:button {"className":"is-style-outline"} -->
+						<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">Contact Sales</a></div>
+						<!-- /wp:button -->
+					</div>
+					<!-- /wp:buttons -->
 
-		<!-- wp:spacer {"height":"1.25rem"} -->
-		<div style="height:1.25rem" aria-hidden="true" class="wp-block-spacer"></div>
-		<!-- /wp:spacer -->
-
-		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-		<div class="wp-block-buttons">
-			<!-- wp:button -->
-			<div class="wp-block-button">
-				<a class="wp-block-button__link wp-element-button"><?php echo esc_html_x( 'About us', 'Button text of the hero section', 'wcrh-base-theme' ); ?></a>
+					<!-- wp:wcrh/custom-spacer /-->
+				</div>
+				<!-- /wp:group -->
 			</div>
-			<!-- /wp:button -->
+			<!-- /wp:column -->
+
+			<!-- wp:column -->
+			<div class="wp-block-column">
+				<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
+				<figure class="wp-block-image size-full">
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt="<?php esc_attr_e('Building exterior in Toronto, Canada', 'wcrh-base-theme'); ?>" />
+				</figure>
+				<!-- /wp:image -->
+			</div>
+			<!-- /wp:column -->
 		</div>
-		<!-- /wp:buttons -->
+		<!-- /wp:columns -->
 	</div>
 	<!-- /wp:group -->
-
-	<!-- wp:spacer {"height":"var:preset|spacing|30","style":{"layout":{}}} -->
-	<div style="height:var(--wp--preset--spacing--30)" aria-hidden="true" class="wp-block-spacer">
-	</div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:image {"align":"wide","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-	<figure class="wp-block-image alignwide size-full is-style-rounded">
-		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/building-exterior.webp" alt="<?php esc_attr_e( 'Building exterior in Toronto, Canada', 'wcrh-base-theme' ); ?>" />
-	</figure>
-	<!-- /wp:image -->
-</div>
+</section>
 <!-- /wp:group -->

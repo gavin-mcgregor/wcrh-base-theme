@@ -70,77 +70,15 @@ if (!function_exists('wcrh_base_theme_block_styles')) :
 			)
 		);
 		register_block_style(
-			'core/list',
+			'core/column',
 			array(
-				'name'         => 'checkmark-list',
-				'label'        => __('Checkmark', 'wcrh-base-theme'),
-				/*
-				 * Styles for the custom checkmark list block style
-				 * https://github.com/WordPress/gutenberg/issues/51480
-				 */
+				'name'         => 'flex-center',
+				'label'        => __('Flex Center'),
 				'inline_style' => '
-				ul.is-style-checkmark-list {
-					list-style-type: "\2713";
-				}
-
-				ul.is-style-checkmark-list li {
-					padding-inline-start: 1ch;
+				.is-style-flex-center {
+					display: flex;
+					align-items: center;
 				}',
-			)
-		);
-		register_block_style(
-			'core/navigation-link',
-			array(
-				'name'         => 'arrow-link',
-				'label'        => __('With arrow', 'wcrh-base-theme'),
-				/*
-				 * Styles for the custom arrow nav link block style
-				 */
-				'inline_style' => '
-				.is-style-arrow-link .wp-block-navigation-item__label:after {
-					content: "\2197";
-					padding-inline-start: 0.25rem;
-					vertical-align: middle;
-					text-decoration: none;
-					display: inline-block;
-				}',
-			)
-		);
-		register_block_style(
-			'core/heading',
-			array(
-				'name'         => 'asterisk',
-				'label'        => __('With asterisk', 'wcrh-base-theme'),
-				'inline_style' => "
-				.is-style-asterisk:before {
-					content: '';
-					width: 1.5rem;
-					height: 3rem;
-					background: var(--wp--preset--color--contrast-2, currentColor);
-					clip-path: path('M11.93.684v8.039l5.633-5.633 1.216 1.23-5.66 5.66h8.04v1.737H13.2l5.701 5.701-1.23 1.23-5.742-5.742V21h-1.737v-8.094l-5.77 5.77-1.23-1.217 5.743-5.742H.842V9.98h8.162l-5.701-5.7 1.23-1.231 5.66 5.66V.684h1.737Z');
-					display: block;
-				}
-
-				/* Hide the asterisk if the heading has no content, to avoid using empty headings to display the asterisk only, which is an A11Y issue */
-				.is-style-asterisk:empty:before {
-					content: none;
-				}
-
-				.is-style-asterisk:-moz-only-whitespace:before {
-					content: none;
-				}
-
-				.is-style-asterisk.has-text-align-center:before {
-					margin: 0 auto;
-				}
-
-				.is-style-asterisk.has-text-align-right:before {
-					margin-left: auto;
-				}
-
-				.rtl .is-style-asterisk.has-text-align-left:before {
-					margin-right: auto;
-				}",
 			)
 		);
 	}
@@ -186,6 +124,16 @@ if (!function_exists('wcrh_base_theme_block_stylesheets')) :
 				'src'    => get_parent_theme_file_uri('assets/css/group.css'),
 				'ver'    => wp_get_theme(get_template())->get('Version'),
 				'path'   => get_parent_theme_file_path('assets/css/group.css'),
+			)
+		);
+
+		wp_enqueue_block_style(
+			'core/columns',
+			array(
+				'handle' => 'wcrh-base-theme-columns',
+				'src'    => get_parent_theme_file_uri('assets/css/columns.css'),
+				'ver'    => wp_get_theme(get_template())->get('Version'),
+				'path'   => get_parent_theme_file_path('assets/css/columns.css'),
 			)
 		);
 	}
@@ -251,21 +199,21 @@ endif;
 add_filter('block_categories_all', 'register_custom_block_category', 10, 2);
 
 /**
- * UN-Register Embed Blocks
+ * UN-Register Certain Blocks
  */
 
-if (!function_exists('unregister_embed_blocks')) :
+if (!function_exists('unregister_certain_blocks')) :
 	/**
-	 * UN-Register Embed Blocks
+	 * UN-Register certain Blocks
 	 *
 	 * @since WCRH Base Theme 1.0
 	 * @return void
 	 */
-	function unregister_embed_blocks()
+	function unregister_certain_blocks()
 	{
 		wp_enqueue_script(
-			'unregister-embed-blocks',
-			get_template_directory_uri() . '/assets/js/unregister-embed-blocks.js',
+			'unregister-certain-blocks',
+			get_template_directory_uri() . '/assets/js/unregister-certain-blocks.js',
 			array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'),
 			null,
 			true
@@ -273,7 +221,32 @@ if (!function_exists('unregister_embed_blocks')) :
 	}
 endif;
 
-add_action('enqueue_block_editor_assets', 'unregister_embed_blocks');
+add_action('enqueue_block_editor_assets', 'unregister_certain_blocks');
+
+/**
+ * Register Block Variations
+ */
+
+if (!function_exists('register_block_variations')) :
+	/**
+	 * Register Block Variations
+	 *
+	 * @since WCRH Base Theme 1.0
+	 * @return void
+	 */
+	function register_block_variations()
+	{
+		wp_enqueue_script(
+			'register-block-variations',
+			get_template_directory_uri() . '/assets/js/register-block-variations.js',
+			array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'),
+			null,
+			true
+		);
+	}
+endif;
+
+add_action('enqueue_block_editor_assets', 'register_block_variations');
 
 /**
  * Remove Admin Bar
