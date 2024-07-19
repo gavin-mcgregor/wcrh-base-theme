@@ -1,0 +1,12 @@
+/* Editor  */
+
+/* Descriptive text */
+.wp-desc {
+	color: rgb(117, 117, 117);
+	font-size: 12px;
+}
+
+/* All components */
+.block-editor-block-inspector .components-base-control {
+	margin-bottom: 8px;
+}

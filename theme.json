@@ -1,4 +1,5 @@
 {
+	"patterns": ["banner-hero", "about-team", "work-services", "special-feature"],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -32,7 +33,7 @@
 					"slug": "contrast-3"
 				},
 				{
-					"color": "#ff0000",
+					"color": "#636363",
 					"name": "Accent",
 					"slug": "accent"
 				},
@@ -96,14 +97,7 @@
 					"slug": "50"
 				}
 			],
-			"units": [
-				"%",
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw"
-			]
+			"units": ["%", "px", "em", "rem", "vh", "vw"]
 		},
 		"typography": {
 			"defaultFontSizes": false,
@@ -128,43 +122,10 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Cardo",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/cardo/cardo_normal_400.woff2"
-							]
-						},
-						{
-							"fontFamily": "Cardo",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/cardo/cardo_italic_400.woff2"
-							]
-						},
-						{
-							"fontFamily": "Cardo",
-							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/cardo/cardo_normal_700.woff2"
-							]
-						}
-					],
-					"fontFamily": "Cardo",
-					"name": "Cardo",
-					"slug": "alt"
-				},
-				{
-					"fontFace": [
-						{
 							"fontFamily": "\"Bastardo\"",
 							"fontStyle": "normal",
 							"fontWeight": "normal",
-							"src": [
-								"file:./assets/fonts/bastardo/bastardo-med.woff2"
-							]
+							"src": ["file:./assets/fonts/bastardo/bastardo-med.woff2"]
 						}
 					],
 					"fontFamily": "\"Bastardo\", sans-serif",
@@ -175,11 +136,6 @@
 					"fontFamily": "-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif",
 					"name": "System Sans-serif",
 					"slug": "system-sans-serif"
-				},
-				{
-					"fontFamily": "Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol",
-					"name": "System Serif",
-					"slug": "system-serif"
 				}
 			],
 			"fontSizes": [
@@ -296,11 +252,6 @@
 					"fontWeight": "400"
 				}
 			},
-			"core/post-featured-image": {
-				"border": {
-					"radius": "var(--wp--preset--spacing--10)"
-				}
-			},
 			"core/separator": {
 				"border": {
 					"color": "currentColor",
@@ -342,6 +293,7 @@
 			}
 		},
 		"color": {
+			"background": "var(--wp--preset--color--base-2)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
 		"css": ":where(.wp-site-blocks *:focus){outline-width:0px;outline-style:solid} .has-xx-large-font-size, .has-large-font-size, .has-xx-large-font-size {line-height: 1em;} .has-medium-font-size, .has-small-font-size {line-height: 1.4em;} @media (max-width: 640px){html {font-size: 14px;} .has-xx-large-font-size, .has-x-large-font-size {font-size: 2.5rem !important;}}",
@@ -484,16 +436,6 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
-		},
-		{
-			"area": "uncategorized",
-			"name": "sidebar",
-			"title": "Sidebar"
-		},
-		{
-			"area": "uncategorized",
-			"name": "post-meta",
-			"title": "Post Meta"
 		}
 	],
 	"version": 3,

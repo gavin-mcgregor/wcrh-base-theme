@@ -12,6 +12,25 @@ wp.domReady(() => {
 				name: "Section",
 			},
 		},
+		innerBlocks: [
+			[
+				"core/group",
+				{
+					variation: "inner",
+					metadata: { name: "Inner" },
+					width: "page-width-normal",
+					layout: { type: "default" },
+				},
+				[
+					["wcrh/custom-spacer"],
+					[
+						"core/paragraph",
+						{ content: "This is a paragraph inside the nested group." },
+					],
+					["wcrh/custom-spacer"],
+				],
+			],
+		],
 	});
 
 	wp.blocks.registerBlockVariation("core/group", {

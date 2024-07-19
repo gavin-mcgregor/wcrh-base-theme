@@ -249,7 +249,55 @@ endif;
 add_action('enqueue_block_editor_assets', 'register_block_variations');
 
 /**
+ * Register Editor Styles
+ */
+
+if (!function_exists('wcrh_custom_editor_styles')) :
+	/**
+	 * Register Editor Styles
+	 *
+	 * @since WCRH Base Theme 1.0
+	 * @return void
+	 */
+	function wcrh_custom_editor_styles()
+	{
+		$editor_css = get_template_directory_uri() . '/assets/css/editor.css';
+		wp_enqueue_style('wcrh-editor-styles', $editor_css);
+	}
+endif;
+
+add_action('enqueue_block_editor_assets', 'wcrh_custom_editor_styles');
+
+/**
+ * Enqueue frontend js
+ */
+
+if (!function_exists('wcrh_frontend_scripts')) :
+	/**
+	 * Enqueue frontend js
+	 *
+	 * @since WCRH Base Theme 1.0
+	 * @return void
+	 */
+	function wcrh_frontend_scripts()
+	{
+		$frontend_js = get_template_directory_uri() . '/assets/js/header-footer-height.js';
+		wp_enqueue_script('wcrh-header-footer-height', $frontend_js, array(), true);
+	}
+endif;
+
+add_action('wp_enqueue_scripts', 'wcrh_frontend_scripts');
+
+/**
  * Remove Admin Bar
  */
 
 add_filter('show_admin_bar', '__return_false');
+
+/**
+ * Remove "Explore Patterns"
+ */
+
+add_action('init', function () {
+	remove_theme_support('core-block-patterns');
+}, 9);

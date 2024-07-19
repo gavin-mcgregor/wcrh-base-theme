@@ -1,1 +1,53 @@
-<!-- wp:pattern {"slug":"wcrh-base-theme/template-home-business"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","area":"header"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"right":"0","left":"0"}}},"className":"is-style-default","layout":{"type":"default"}} -->
+<main
+	class="wp-block-group is-style-default"
+	style="margin-top: 0; margin-bottom: 0; padding-right: 0; padding-left: 0"
+>
+	<!-- wp:group {"tagName":"main","align":"full","layout":{"type":"default"},"width":"page-width-normal"} -->
+	<main class="wp-block-group alignfull">
+		<!-- wp:wcrh/custom-spacer {"height":"spacer-x2"} /-->
+
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"grid","columnCount":1,"minimumColumnWidth":null},"width":"page-width-text","gridMobile":"mob-1-col"} -->
+		<div class="wp-block-group">
+			<!-- wp:group {"style":{"layout":{"columnSpan":"3"}},"layout":{"type":"default"}} -->
+			<div class="wp-block-group">
+				<!-- wp:query {"queryId":0,"query":{"perPage":1,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"namespace":"core/posts-list"} -->
+				<div class="wp-block-query">
+					<!-- wp:post-template -->
+					<!-- wp:post-featured-image /-->
+
+					<!-- wp:post-title /-->
+
+					<!-- wp:post-excerpt /-->
+
+					<!-- wp:wcrh/custom-spacer /-->
+					<!-- /wp:post-template -->
+
+					<!-- wp:query-pagination -->
+					<!-- wp:query-pagination-previous /-->
+
+					<!-- wp:query-pagination-numbers /-->
+
+					<!-- wp:query-pagination-next /-->
+					<!-- /wp:query-pagination -->
+
+					<!-- wp:query-no-results -->
+					<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results."} -->
+					<p>Sorry, nothing to see...</p>
+					<!-- /wp:paragraph -->
+					<!-- /wp:query-no-results -->
+				</div>
+				<!-- /wp:query -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:wcrh/custom-spacer {"height":"spacer-x4"} /-->
+	</main>
+	<!-- /wp:group -->
+
+	<!-- wp:template-part {"slug":"footer","tagName":"footer","area":"footer"} /-->
+</main>
