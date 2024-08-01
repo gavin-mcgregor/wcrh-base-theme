@@ -29,7 +29,7 @@
 		<!-- wp:group {"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null},"gridMobile":"mob-2-col"} -->
 		<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"},"width":""} -->
 			<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt=" " /></figure>
+				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/deniz-demirci-Smnoww85FoQ-unsplash.jpg" alt=" " /></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -47,7 +47,7 @@
 
 			<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"},"width":""} -->
 			<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt=" " /></figure>
+				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/roman-denisenko-ZWfV0gb_GzE-unsplash.jpg" alt=" " /></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -65,7 +65,7 @@
 
 			<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"},"width":""} -->
 			<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt=" " /></figure>
+				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/venti-views-E-GW6rihxck-unsplash.jpg" alt=" " /></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->
@@ -83,7 +83,7 @@
 
 			<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap"},"width":""} -->
 			<div class="wp-block-group"><!-- wp:image {"sizeSlug":"large","linkDestination":"none"} -->
-				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt=" " /></figure>
+				<figure class="wp-block-image size-large"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/vincent-timothy-BPaw0p4Ta1E-unsplash.jpg" alt=" " /></figure>
 				<!-- /wp:image -->
 
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0","margin":{"top":"var:preset|spacing|10"}}},"layout":{"type":"flex","orientation":"vertical"}} -->

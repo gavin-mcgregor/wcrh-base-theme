@@ -6,6 +6,13 @@
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"defaultPalette": false,
+			"gradients": [
+				{
+					"gradient": "linear-gradient(180deg, var(--wp--preset--color--base) calc(100% - 4rem), var(--wp--preset--color--base-2) calc(100% - 4rem))",
+					"name": "Base to Base Two",
+					"slug": "base-to-base-two"
+				}
+			],
 			"palette": [
 				{
 					"color": "#f9f9f9",

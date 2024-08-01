@@ -43,7 +43,7 @@
 			<div class="wp-block-column">
 				<!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
 				<figure class="wp-block-image size-full">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt="<?php esc_attr_e('Building exterior in Toronto, Canada'); ?>" />
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/robert-tudor-G7bXcUgh_xk-unsplash.jpg" alt="<?php esc_attr_e('Building exterior in Toronto, Canada'); ?>" />
 				</figure>
 				<!-- /wp:image -->
 			</div>

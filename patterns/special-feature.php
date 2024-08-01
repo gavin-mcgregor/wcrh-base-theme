@@ -34,7 +34,7 @@
 
 			<!-- wp:column {"width":"66.66%"} -->
 			<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"sizeSlug":"full","linkDestination":"none"} -->
-				<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/abstract-geometric-art.webp" alt=" " /></figure>
+				<figure class="wp-block-image size-full"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/jalen-banks-OXJiXTsOflY-unsplash.jpg" alt=" " /></figure>
 				<!-- /wp:image -->
 			</div>
 			<!-- /wp:column -->
