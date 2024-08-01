@@ -7,7 +7,7 @@
  */
 ?>
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Section"},"layout":{"type":"default"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Section","categories":["wcrh"],"patternName":"wcrh-base-theme/blog-archive"},"layout":{"type":"default"}} -->
 <section class="wp-block-group"><!-- wp:group {"metadata":{"name":"Inner"},"layout":{"type":"default"},"width":"page-width-normal"} -->
 	<div class="wp-block-group"><!-- wp:wcrh/custom-spacer {"height":"spacer-x2"} /-->
 
@@ -25,11 +25,9 @@
 			</div>
 			<!-- /wp:column -->
 
-			<!-- wp:column {"width":"66.66%"} -->
-			<div class="wp-block-column" style="flex-basis:66.66%">
-
-				<!-- wp:wcrh/custom-archive {"numPosts":"4"} /-->
-
+			<!-- wp:column {"width":"66.66%","className":"is-style-flex-center"} -->
+			<div class="wp-block-column is-style-flex-center" style="flex-basis:66.66%">
+				<!-- wp:wcrh/custom-archive {"numPosts":"4","color":"#f9f9f9"} /-->
 			</div>
 			<!-- /wp:column -->
 		</div>
